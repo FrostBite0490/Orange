@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #eeeeee;
+    }
+    
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        pointer-events: none;
+    }
+    
+    .box {
+        position: relative;
+        opacity: .3;
+        width: 70vh auto 0 auto;
+        max-width: 600px;
+        max-height: 300px;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+        height: 87vw;
+        overflow: scroll;
+        scroll: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        box-shadow: 0 10px 10px -1px rgba(0, 0.5, 0.3, 1);
+        background: #ACD0ED;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+        backdrop-filter: blur( 10px);
+        -webkit-backdrop-filter: blur( 14px);
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18);
+    }
+    
+    .inbox1 {
+        font-size: 1rem;
+        font-weight: 800;
+        color: black;
+    }
+    
+    .q1 {
+        height: 3rem;
+        margin-left: 50vw color: black;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    
+    .btn {
+        height: 3rem;
+        margin-left: 3vw;
+        width: 3rem;
+        border-radius: 10px;
+        border-color: black;
+        background: rgba( 17, 193, 177, 0.4);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+        backdrop-filter: blur( 10px);
+        -webkit-backdrop-filter: blur( 40px);
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18);
+        transition: 0.5s;
+        font-size: .6rem;
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .btn:hover {
+        border-color: black;
+        width: 4rem;
+        z-index: 1000;
+        color: #3260C2;
+    }
+    
+    .hr {
+        width: 30vw;
+        opacity: .8;
+    }
+    
+    .next {
+        display: flex;
+        margin-left: 65vw;
+        width: 6rem;
+        text-align: center;
+        border: 1px solid black;
+        height: 3rem;
+        border-radius: 50px;
+        text-transform: uppercase;
+        font-weight: 900;
+        text-align: center;
+        cursor: pointer;
+        display: table;
+        justify-content: flex-right;
+        transition: 0.5s;
+        pointer-events: ;
+    }
+</style>
+
+<body>
+    <img src="/orange/Logo4.png" class="logo">
+    <div class="box">
+
+        <div class="inbox1">
+            Camera
+        </div>
+    </div>
+    <br>
+    <div class="q1">
+        <form action="http://localhost:5000/5" method="POST">
+            <input type="radio" id="1" name="rating" value="1" class="btn">
+            <label for="1">1</label>
+            <input type="radio" id="2" name="rating" value="2" class="btn">
+            <label for="2">2</label>
+            <input type="radio" id="3" name="rating" value="3" class="btn">
+            <label for="3">3</label>
+            <input type="radio" id="4" name="rating" value="4" class="btn">
+            <label for="4">4</label>
+            <input type="radio" id="5" name="rating" value="5" class="btn">
+            <label for="5">5</label>
+            <button class="next" type="submit">Next!</button>
+        </form>
+    </div>
+    <br><br>
+    <hr class="hr">
+    <br>
+    <br>
+</body>
+
+</html>
