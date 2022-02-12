@@ -62,10 +62,9 @@ def analyze():
             
         if (user_pref['batt']>phone_data['batt']):
             batt=abs(phone_data['batt']-user_pref['batt'])
-            
         else:
             batt+=0
-            
+
             sup+= phone_data['batt']-user_pref['batt']
         
         if (user_pref['cam']>phone_data['cam']):
@@ -86,10 +85,14 @@ def analyze():
             'sup':sup
             },ignore_index=True)
     
-    panda_agg=panda_agg.sort_values(by=['agg','sup'],ascending=True)
-    print(panda_agg)
-    #if(panda_agg['agg'].iloc[0]==panda_agg['agg'].iloc[1]): 
-    #    print('Nooooooo!!!')
-    #    panda_agg_strip=panda_agg.drop('name',axis=1)
-        
+    panda_agg=panda_agg.sort_values(by=['agg'],ascending=True)
+    
+    if(len(panda_agg.loc[panda_agg['agg']==panda_agg['agg'].iloc[0]])==1):
+        print("hello")
+    else:
+        pf=panda_agg.loc[panda_agg['agg']==panda_agg['agg'].iloc[0]]
+        pf=pf.sort_values(by=['sup'],ascending=False)
+        winner=pf.iloc[0].to_dict()
+    print(winner)
+    return winner
 analyze()
