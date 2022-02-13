@@ -46,13 +46,18 @@ def read_maria():
     #print(phonelist)        
     return phonelist
     
-app = Flask(__name__)
+app = Flask(__name__ ,static_folder="/static")
 app.config['SECRET_KEY'] = SECRET_KEY
 @app.route("/")
 def hello_world():
     data='a'
-    return render_template('Rating.html',data=data)
-    
+    return render_template('index.html',data=data)
+
+@app.route("/1",methods=['POST','GET'])
+def r1():
+    data='a'
+    return render_template('Rating.html')
+
 @app.route('/2',methods=['POST','GET'])
 def r2():
    
@@ -72,7 +77,7 @@ def r3():
             print("-------",batt)
             return render_template("Rating3.html") 
         else:
-            return render_template("Rating2.html",data="Select")
+            return render_template("Rating2.html",data="Select a value")
 @app.route('/4',methods=['POST','GET'])
 def r4():
     if request.method=='POST':
@@ -82,7 +87,7 @@ def r4():
             print("-------",disp)
             return render_template("Rating4.html") 
         else:
-            return render_template("Rating3.html",data="Select")
+            return render_template("Rating3.html",data="Select a value")
 
 @app.route('/5',methods=['POST','GET'])
 def r5():
@@ -93,7 +98,7 @@ def r5():
             print("-------",cam)
             return render_template("Rating5.html") 
         else:
-            return render_template("Rating4.html",data="select")
+            return render_template("Rating4.html",data="Select a value")
 
 @app.route('/f',methods=['POST','GET'])
 def final():

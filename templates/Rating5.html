@@ -60,6 +60,13 @@
         color: black;
     }
     
+    .inbox2 {
+        font-size: 1rem;
+        font-weight: 400;
+        color: gray;
+        margin-left: 5rem;
+    }
+    
     .rating {
         height: 3rem;
         text-align: center;
@@ -88,13 +95,6 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     
-    .btn:hover {
-        border-color: black;
-        width: 1.4rem;
-        z-index: 1000;
-        color: #3260C2;
-    }
-    
     .hr {
         width: 30vw;
         opacity: .8;
@@ -119,15 +119,43 @@
     }
     
     li {
-        width: 10%;
+        width: 5%;
         height: 1%;
         display: inline-block;
     }
     
-    .rep1:focus {
+    #rep1:hover {
         width: 1rem;
         transition: ease-in all .00001s;
         color: green;
+        webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: orange;
+        -webkit-text-fill-color: orange;
+    }
+    
+    #rep1:checked+label {
+        webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: orange;
+        width: 1rem;
+        transition: ease-in all .1s;
+    }
+    
+    .result {
+        width: 10rem;
+        text-align: center;
+        border: 1px solid black;
+        height: 3rem;
+        border-radius: 50px;
+        text-transform: uppercase;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 2rem;
+        cursor: pointer;
+        display: table;
+        justify-content: flex-right;
+        transition: 0.5s;
+        margin-right: auto;
+        margin-left: auto;
     }
 </style>
 
@@ -136,10 +164,14 @@
     <div class="box">
 
         <div class="inbox1">
-            Price
+            What is your budget?
         </div>
     </div>
-    <br>
+    <div class="inbox2">
+
+        Cheap:- 0-10k <br> Mid-range:- 10-25k <br> Higher-mid:- 25-50k <br> Lower-flagship:- 50-80k <br> Flagship:- 80-160k <br>
+
+    </div> <br>
     <div class="rating">
         <p hidden>hello</p>
         <form action="http://localhost:5000/f" method="POST">

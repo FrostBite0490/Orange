@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+html{
+  scroll-behavior: smooth;
+}
+  body {
+ margin: 0;
+ padding: 0;
+    overflow-x: hidden;
+    background-color: ghostwhite;
+    scroll-behavior: smooth;
+    
+  }
+.page1{
+  margin: 0;
+  padding: 0;
+ background-color: ghostwhite;
+ overflow: hidden;
+ 
+}
+  .head {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+    margin-left: 16vw;
+    font-weight: 900;
+    background: #00ADB5;
+    background: linear-gradient(0deg, rgba(80, 145, 170, 0.7158119495098407) 0%, rgba(195, 136, 235, 0.8717948717948718) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .headyy {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 900;
+    background: #00ADB5;
+    background: linear-gradient(0deg, rgba(80, 145, 170, 0.7158119495098407) 0%, rgba(195, 136, 235, 0.8717948717948718) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #spin {
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-left: 16vw;
+    z-index: 1000;
+
+  }
+
+  #spin:after {
+    content: "";
+    animation: spin 8s linear infinite;
+    text-decoration: n
+  }
+
+  @keyframes spin {
+    0% {
+      content: ".";
+    }
+
+    35% {
+      content: "The expensive Apple";
+    }
+
+    15% {
+      content: "Amoled display";
+    }
+
+    25% {
+      content: "Build quality";
+    }
+
+    15% {
+      content: "User experience";
+    }
+
+    45% {
+      content: "Samsung";
+    }
+
+    55% {
+      content: "#Phoneformylife";
+      .
+    }
+
+    65% {
+      content: "Xiaomi";
+      .
+    }
+
+    75% {
+      content: "Best phone for your pocket";
+    }
+
+    85% {
+      content: "Gaming phone ";
+    }
+
+    95% {
+      content: "beast phone";
+    }
+
+    100% {
+      content: ".";
+    }
+  }
+
+  .box {
+     position: relative;
+     opacity: .3;
+    width: 70vh auto 0 auto;
+    max-width: 600px;
+    max-height: 300px;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    height: 87vw;
+    overflow: scroll;
+    scroll:hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px -1px rgba(0, 0.5, 0.3, 1);
+    background: rgba( 17, 193, 177, 0.4 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10px );
+-webkit-backdrop-filter: blur( 14px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+webkit-animation: text-focus-in 2.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 2.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+.inbox{
+  font-weight: 500;
+text-align: center;
+font-weight: 900;
+}
+@-webkit-keyframes box{
+  0% {
+    -webkit-filter: blur(5px);
+            filter: blur(7px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+.box:hover{
+  
+  height: 87.3vw;
+}
+@media only screen and (max-width: 768px) and (min-width: 320px){ 
+.imgon{ 
+display: none;  
+margin-right: 2px;
+}  
+}
+#imh{
+  margin-left: 40vw;
+  margin-top: -160vh
+  
+}
+  .inbox {
+    z-index: 1000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+.inbox:hover{
+ 
+  color: #E3C0A4;
+}
+  #wave2 {
+    opacity: .9;
+    display: flex;
+    position: absolute;
+    width: auto;
+    max-width: 700px;
+    max-height: 2300px;
+    margin: -15vw auto auto -19vw;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  #wave2:hover{
+    color: grey;
+  }
+  .btn1 {
+   
+    width: 10rem;
+    text-align: center;
+    border: 1px solid black;
+    height: 3rem;
+    border-radius:50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 2rem;
+    cursor: pointer;
+    display: table;
+    justify-content: flex-right;
+    transition: 0.5s;
+    margin-right: auto;
+    margin-left: auto;
+    
+   }
+ 
+  .btn1:hover{
+    color: green;
+    width: 11rem;
+  }
+  .GeneratedMarquee {
+font-family:Verdana, sans-serif;
+font-size:1.8em;
+font-weight:bold;
+font-variant:small-caps;
+line-height:1.3em;
+text-align:center;
+padding:1.5rem;
+}
+.page2{
+  background-image: url("video-bg-light.gif");
+ 
+  
+}
+.daba1, .daba2, .daba3{
+  width:100px;
+  height:100px;
+  opacity: .3;
+  background: rgba( 17, 193, 177, 0.4 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 40px );
+-webkit-backdrop-filter: blur( 40px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+</style>
+
+<body> <div class="page1">
+  <img src="Logo4.png" class="logo">
+  <div class="head">5 questions<br> that's all we need.</div><br>
+  <div>
+    <span id="spin"></span></div><br><br>
+<br><br>
+    <div class="box">
+      <div class="inbox">
+        "One tap to decide the best phone for you"</div>
+    
+    <!--?xml version="1.0" standalone="no"?-->              <svg id="wave2" id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(32.148, 185.228, 192.066, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(99.12, 40.408, 117.065, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M27.9,-23.2C32.2,-16.8,29,-5.5,25.9,4.9C22.7,15.2,19.5,24.5,13.1,27.7C6.7,31,-2.8,28.3,-12.6,24.3C-22.4,20.3,-32.6,15,-34.7,7.5C-36.8,-0.1,-30.8,-10,-23.7,-17C-16.6,-24,-8.3,-28.2,1.7,-29.6C11.8,-31,23.6,-29.6,27.9,-23.2Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>              </svg>
+ </div>
+    <div class="imgopen">
+      <img src="Land.svg" id="imh" style="object-fit: cover" >
+    </div>
+   <br><br><div class="flex">
+     <form>
+      <button formaction="Rating.html" class="btn1"><div class="inbtn">get now!</div></button></div></div><div> </form>
+      <marquee class="GeneratedMarquee" direction="left" scrollamount="15sec" behavior="scroll">GoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvilla</marquee>
+      <br><br><br>
+</div> <br><br><br><br>
+<div class="page2"> <br><br>
+<div class="headyy">Features</div>
+  <style>
+  .logo{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+ 
+  }
+.container {
+  display: grid;
+  place-items: center;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+.credit a {
+  color: #1a292c;
+  text-transform: lowercase;
+}
+
+img {
+  height: 100
+  width: 60vw;
+  max-width: 85vw;
+  object-fit: contain;
+
+}
+.img:hover{
+  height:110%;
+}
+.img:hover{
+  h2{
+  font-weight: 300;
+}
+}
+.h2:hove QQr{
+  font-weight: 300;
+}
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+ border: 3px solid white;
+ background: #00ADB5;
+    background: linear-gradient #CE1CFF 0%, #8D48CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-size: clamp(1.8rem, 7vw, 4rem);
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 80%;
+  height: 50%;
+  z-index: 99;
+  display: grid;
+  place-items: center;
+}
+
+body:not(.no-js) .image-wrap {
+  transition: .3s ease-out;
+  transition-delay: 0s;
+  position: relative;
+  width: auto;
+  height: 80vh;
+  overflow: hidden;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  visibility: hidden;
+}
+
+body:not(.no-js) .image-wrap img {
+  transform: scale(1);
+  transition: 1.4s ease-out;
+}
+
+body:not(.no-js) .animating .image-wrap {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  visibility: visible;
+  transform: skewY(0);
+}
+
+body:not(.no-js) .animating img {
+  transform: scale(1);
+  transition: 4s ease-out;
+}
+
+body:not(.no-js) .fadeup {
+  opacity: 0;
+  transition: 0.4s ease-out;
+  transform: translateY(40px);
+}
+
+body:not(.no-js) .fading-up {
+  opacity: 1;
+  transition: 1s ease-out;
+  transform: translateY(0px);
+  transition-delay: 0s;
+}
+
+</style>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function () {
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.4
+  };
+
+  // IMAGE ANIMATION
+
+  let revealCallback = (entries) => {
+    entries.forEach((entry) => {
+      let container = entry.target;
+
+      if (entry.isIntersecting) {
+        console.log(container);
+        container.classList.add("animating");
+        return;
+      }
+
+      if (entry.boundingClientRect.top > 0) {
+        container.classList.remove("animating");
+      }
+    });
+  };
+
+  let revealObserver = new IntersectionObserver(revealCallback, options);
+
+  document.querySelectorAll(".reveal").forEach((reveal) => {
+    revealObserver.observe(reveal);
+  });
+
+  // TEXT ANIMATION
+
+  let fadeupCallback = (entries) => {
+    entries.forEach((entry) => {
+      let container = entry.target;
+      container.classList.add("not-fading-up");
+
+      if (entry.isIntersecting) {
+        container.classList.add("fading-up");
+        return;
+      }
+
+      if (entry.boundingClientRect.top > 0) {
+        container.classList.remove("fading-up");
+      }
+    });
+  };
+
+  let fadeupObserver = new IntersectionObserver(fadeupCallback, options);
+
+  document.querySelectorAll(".fadeup").forEach((fadeup) => {
+    fadeupObserver.observe(fadeup);
+  });
+});
+
+</script>
+<br><br><br><br><br><br>
+<div class='container'>
+  <h2 class="fadeup">Find Best phone suiting your requirement</h2>
+  <div class='reveal'>
+    <div class="image-wrap">
+      <img src='feature1.png'>
+    </div>
+  </div>
+</div> <br><br><br>
+<div class='container'>
+  <h2 class="fadeup">Expertise result in seconds.<br>"Less effort and time"</h2>
+  <div class='reveal'>
+    <div class="image-wrap">
+      <img src='feature2.png'>
+    </div>
+  </div>
+</div> <br><br><br>
+<div class='container'>
+  <h2 class="fadeup">Most economical-Finds Best in market prices</h2>
+  <div class='reveal'>
+    <div class="image-wrap">
+      <img src='feature3.png'>
+    </div>
+  </div>
+</div> <br><br><br>
+ <br> <form>
+<button formaction="Rating.html" class="btn1">Get now!</button></form>
+ <marquee class="GeneratedMarquee" direction="left" scrollamount="15sec" behavior="scroll">GoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvillaGoTechvilla</marquee>
+  <br><br><br>
+  <div class="headyy">""The code panthers""</div> 
+  <button formaction="Rating.html" class="btn1">contact us
+  </button>
+<br><br><br><br>
+</div>
+</body>
+</html>
