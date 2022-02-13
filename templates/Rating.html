@@ -136,12 +136,14 @@
     <div class="box">
 
         <div class="inbox1">
-            Gaming
+            {{q}}
         </div>
     </div>
     <br>
     <div class="rating">
+        <p hidden>hello</p>
         <form action="http://localhost:5000/2" method="POST">
+            <input hidden type="radio" id="0" name="rating" value="0" class="btn" checked>
             <input type="radio" id="1" name="rating" value="1" class="btn">
             <li class="rep1"> <label for="1"><i class="far fa-star"></i></label> </li>
             <input type="radio" id="2" name="rating" value="2" class="btn">
@@ -154,7 +156,8 @@
             <input type="radio" id="5" name="rating" value="5" class="btn">
             <li class="rep1"> <label for="5"><i class="far fa-star"></i></label></li>
             </ul>
-            <br><br>
+            <br><br> {%if data!=null%} {{data}}{%endif%}
+
             <button class="next" type="submit">Next!</button>
         </form>
     </div>

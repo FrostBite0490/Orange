@@ -2,9 +2,11 @@
 <html>
 
 <head>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
 </head>
 
 <style>
@@ -58,9 +60,8 @@
         color: black;
     }
     
-    .q1 {
+    .rating {
         height: 3rem;
-        margin-left: 50vw color: black;
         text-align: center;
         display: flex;
         flex-direction: row;
@@ -69,9 +70,10 @@
     }
     
     .btn {
+        opacity: 0;
         height: 3rem;
-        margin-left: 3vw;
-        width: 3rem;
+        margin-left: 2vw;
+        width: 1rem;
         border-radius: 10px;
         border-color: black;
         background: rgba( 17, 193, 177, 0.4);
@@ -81,14 +83,14 @@
         border-radius: 10px;
         border: 1px solid rgba( 255, 255, 255, 0.18);
         transition: 0.5s;
-        font-size: .6rem;
-        font-weight: 500;
+        font-size: .4rem;
+        font-weight: 100;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     
     .btn:hover {
         border-color: black;
-        width: 4rem;
+        width: 1.4rem;
         z-index: 1000;
         color: #3260C2;
     }
@@ -115,6 +117,18 @@
         transition: 0.5s;
         pointer-events: ;
     }
+    
+    li {
+        width: 10%;
+        height: 1%;
+        display: inline-block;
+    }
+    
+    .rep1:focus {
+        width: 1rem;
+        transition: ease-in all .00001s;
+        color: green;
+    }
 </style>
 
 <body>
@@ -126,26 +140,49 @@
         </div>
     </div>
     <br>
-    <div class="q1">
+    <div class="rating">
+        <p hidden>hello</p>
         <form action="http://localhost:5000/4" method="POST">
+            <input hidden type="radio" id="0" name="rating" value="0" class="btn" checked>
             <input type="radio" id="1" name="rating" value="1" class="btn">
-            <label for="1">1</label>
+            <li class="rep1"> <label for="1"><i class="far fa-star"></i></label> </li>
             <input type="radio" id="2" name="rating" value="2" class="btn">
-            <label for="2">2</label>
+            <li class="rep1"> <label for="2"><i 
+            class="far fa-star"></i></label></li>
             <input type="radio" id="3" name="rating" value="3" class="btn">
-            <label for="3">3</label>
+            <li class="rep1"><label for="3"><i class="far fa-star"></i></label></li>
             <input type="radio" id="4" name="rating" value="4" class="btn">
-            <label for="4">4</label>
+            <li class="rep1"> <label for="4"><i class="far fa-star"></i></label></li>
             <input type="radio" id="5" name="rating" value="5" class="btn">
-            <label for="5">5</label>
+            <li class="rep1"> <label for="5"><i class="far fa-star"></i></label></li>
+            </ul>
+            <br><br> {%if data!=null%} {{data}}{%endif%}
+
             <button class="next" type="submit">Next!</button>
         </form>
     </div>
     <br><br>
-    <hr class="hr">
-    <br>
-    <br>
 
+    <br>
+    <br>
+    <form action="http://localhost:5000/2" method="POST">
+
+    </form>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            document.getElementById("btn").click();
+        });
+    </script>
+    <script type="text/javascript">
+        (function() {
+            window['__CF$cv$params'] = {
+                r: '6dc98906ada48afa',
+                m: 'W6jQPDJfCRu8cN5xTakNCboLzGCBaWQdKPXHXJ1p9lM-1644707898-0-Afc0QCOO6sM8HCyuwgE/0+E3EUHxOpSwHo0uYg0b1HCMLRMw2Q42fcYtS7P/hP0Q+24q2lOdO1ZQQRV6jticQJHMb6LdOfmq6XqUWlV9SmUOGH5VpemhicwD18bHTkEYQJL0apSZN/M6tEhCbEL0ZK/2mRNMbtBQgzbsfD3vbFKOXz6u22ccTR3nidNscSBVnA==',
+                s: [0x85a1ecc432, 0x2d3c44fbf8],
+            }
+        })();
+    </script><br><br>
+    <hr class="hr">
 </body>
 
 </html>
