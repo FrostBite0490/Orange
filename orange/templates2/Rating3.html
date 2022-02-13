@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #eeeeee;
+    }
+    
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        pointer-events: none;
+    }
+    
+    .box {
+        position: relative;
+        opacity: .3;
+        width: 70vh auto 0 auto;
+        max-width: 600px;
+        max-height: 300px;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+        height: 87vw;
+        overflow: scroll;
+        scroll: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        box-shadow: 0 10px 10px -1px rgba(0, 0.5, 0.3, 1);
+        background: #ACD0ED;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+        backdrop-filter: blur( 10px);
+        -webkit-backdrop-filter: blur( 14px);
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18);
+    }
+    
+    .inbox1 {
+        font-size: 1rem;
+        font-weight: 800;
+        color: black;
+    }
+    
+    .rating {
+        height: 3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    
+    .btn{
+      opacity: 0;
+        height: 3rem;
+        margin-left: 2vw;
+        width: 1rem;
+        border-radius: 10px;
+        border-color: black;
+        background: rgba( 17, 193, 177, 0.4);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+        backdrop-filter: blur( 10px);
+        -webkit-backdrop-filter: blur( 40px);
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18);
+        transition: 0.5s;
+        font-size: .4rem;
+        font-weight: 100;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+
+    
+    .hr {
+        width: 30vw;
+        opacity: .8;
+    }
+    
+    .next {
+        display: flex;
+        margin-left: 65vw;
+        width: 6rem;
+        text-align: center;
+        border: 1px solid black;
+        height: 3rem;
+        border-radius: 50px;
+        text-transform: uppercase;
+        font-weight: 900;
+        text-align: center;
+        cursor: pointer;
+        display: table;
+        justify-content: flex-right;
+        transition: 0.5s;
+        pointer-events: ;
+    }
+ 
+    
+    li {
+  width: 7%;
+  height: 1%;
+  display:inline-block;
+}
+    #rep1:hover {
+  width: 1rem;
+  transition: ease-in all .00001s;
+  color: green;
+  webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: orange;
+    -webkit-text-fill-color: orange;
+}
+#rep1:checked + label
+{
+ webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: orange;
+   width: 1rem;
+  transition: ease-in all .1s;
+  
+}
+</style>
+<body>
+    <img src="Logo4.png" class="logo">
+    <div class="box">
+
+        <div class="inbox1">
+            Display
+        </div>
+    </div>
+    <br>
+    <div class="rating">
+        <form action="http://localhost:5000/2" method="POST">
+            <input type="radio" id="1" name="rating" value="1" class="btn">
+           <li id="rep1"> <label for="1"><i class="far fa-star"></i></label> </li>
+            <input type="radio" id="2" name="rating" value="2" class="btn">
+           <li id="rep1"> <label for="2"><i 
+            class="far fa-star"></i></label></li>
+            <input type="radio" id="3" name="rating" value="3" class="btn">
+            <li id="rep1"><label for="3"><i class="far fa-star"></i></label></li>
+            <input type="radio" id="4" name="rating" value="4" class="btn">
+           <li id="rep1"> <label for="4"><i class="far fa-star"></i></label></li>
+            <input type="radio" id="5" name="rating" value="5" class="btn">
+           <li id="rep1"> <label for="5"><i class="far fa-star"></i></label></li>
+            </ul>
+            <br><br>
+            <form>
+            <button formaction="Rating4.html" class="next" type="submit">Next!</button> </form>
+        </form>
+    </div>
+    <br><br>
+ 
+    <br>
+    <br>
+    <form action="http://localhost:5000/2" method="POST">
+
+    </form>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            document.getElementById("btn").click();
+        });
+    </script>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6dc98906ada48afa',m:'W6jQPDJfCRu8cN5xTakNCboLzGCBaWQdKPXHXJ1p9lM-1644707898-0-Afc0QCOO6sM8HCyuwgE/0+E3EUHxOpSwHo0uYg0b1HCMLRMw2Q42fcYtS7P/hP0Q+24q2lOdO1ZQQRV6jticQJHMb6LdOfmq6XqUWlV9SmUOGH5VpemhicwD18bHTkEYQJL0apSZN/M6tEhCbEL0ZK/2mRNMbtBQgzbsfD3vbFKOXz6u22ccTR3nidNscSBVnA==',s:[0x85a1ecc432,0x2d3c44fbf8],}})();</script><br><br>
+   <hr class="hr">
+</body>
+
+</html>

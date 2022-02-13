@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<style>
+.q1{
+  height: 3rem;
+  margin-left: 50vw
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+    box-sizing: border-box;
+    
+}
+.btn{
+ height: 10vw;
+  margin-left:3vw;
+  width:40px;
+  border-radius: 10px;
+  border-color: black;
+  background: rgba( 17, 193, 177, 0.4 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10px );
+-webkit-backdrop-filter: blur( 40px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+font-size: .6rem;
+font-weight: 500;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ .btn:hover{
+   border-color: black;
+    width: 4rem;
+    z-index: 1000;
+  }
+</style>
+<body>
+  <div class="q1">
+    <div class="rate11">
+      <button type="button" class="btn">1✴️</button>
+    </div>
+    <div class="rate12">
+     <button class="btn" placeholder="1✴️">
+      2✴️</button>
+    </div>
+    <div class="rate13">
+      <button type="button" class="btn">3✴️</button>
+    </div>
+    <div class="rate14">
+      <button type="button" class="btn">4✴️</button>
+    </div>
+    <div class="rate15">
+      <button type="button" class="btn">5✴️</button>
+    </div>
+  </div>
+ 
+.boxed label {
+  display: inline-block;
+  width: 200px;
+  padding: 10px;
+  border: solid 2px #ccc;
+  transition: all 0.3s;
+}
+
+.boxed input[type="radio"] {
+  display: none;
+}
+
+.boxed input[type="radio"]:checked + label {
+  border: solid 2px green;
+}
+</body>
+
+</html>
