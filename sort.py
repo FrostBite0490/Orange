@@ -48,6 +48,32 @@ def analyze(phone_list,user_pref):
         disp,gaming,batt,cam=0,0,0,0
         #comparing user and sample phone data and subtracting 
         phone_data=phone_list[item]
+        match user_pref['price']:
+            case 10:
+                if(phone_data['price']<=10000):
+                    pass
+                else:
+                    continue
+            case 15:
+                if(phone_data['price']<=15000):
+                    pass
+                else:
+                    continue
+            case 20:
+                if(phone_data['price']<=20000):
+                    pass
+                else:
+                    continue
+            case 30:
+                if(phone_data['price']<=30000):
+                    pass
+                else:
+                    continue
+            case 31:
+                if(phone_data['price']>30000):
+                    pass
+                else:
+                    continue
         if (user_pref['disp']>phone_data['disp']):
             disp=abs(user_pref['disp']-phone_data['disp'])
             sup=0
@@ -74,8 +100,8 @@ def analyze(phone_list,user_pref):
             sup= phone_data['cam']-user_pref['cam']
         
         agg=disp+gaming+batt+cam            #adding the all values to get aggregate
-       # print(batt,agg,phone_data['name'])
-        pagg=pagg.append({        #adding values to the dataframe
+       #adding values to the dataframe
+        pagg=pagg.append({        
             'gaming':phone_data['gaming'],
             'batt':phone_data['batt'],
             'disp':phone_data['disp'],
@@ -94,5 +120,5 @@ def analyze(phone_list,user_pref):
         pf=pagg.loc[pagg['agg']==pagg['agg'].iloc[0]]
         pf=pf.sort_values(by=['sup'],ascending=False)
         winner=pf.iloc[0].to_dict()
-   # print(winner)
+    print(winner)
     return winner

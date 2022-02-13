@@ -41,10 +41,11 @@ def read_maria():
             'cam':camera.__float__(),
             'name':name.__str__(),
             'price':price.__float__()}
-        #print(phonedata)
         phonelist.append(phonedata)
-        return phonelist
-    #print(phonelist)
+        #print(phonedata)
+    #print(phonelist)        
+    return phonelist
+    
 app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
 @app.route("/")
@@ -54,13 +55,16 @@ def hello_world():
     
 @app.route('/2',methods=['POST','GET'])
 def r2():
-    if request.method=='POST':
-        global gaming
-        gaming=float(request.form['rating'])
-        print(type(gaming))
-        print("-------",gaming)
-        return render_template("Rating2.html")    
-
+   
+    #if(request.form['rating']):
+    gaming=float(request.form['rating'])
+    if gaming!=None:
+        #print(type(gaming))
+        #print("-------",gaming)
+        return render_template("Rating2.html")
+    else:
+        print('Noooooo')
+        #return render_template("Rating.html",data="Select A Value")
 @app.route('/3',methods=['POST','GET'])
 def r3():
     if request.method=='POST':
@@ -100,7 +104,7 @@ def final():
             'price':price,
             'name':''}
         phone=sort.analyze(phonelist,user_pref)
-        print(phone)
+        print(phonelist)
         return render_template("final.html",data=phone) 
         
 print(cam) 
